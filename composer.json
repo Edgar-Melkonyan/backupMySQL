@@ -1,0 +1,12 @@
+{
+    "name": "edgar/backup_database",
+    "description": "This package backups db",
+    "authors": [
+        {
+            "name": "Edgar Melkonyan",
+            "email": "edgar365224@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
