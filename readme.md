@@ -5,14 +5,40 @@ BackupDatabase is package which made to backup data from MySQL and save inside s
 ## Installation
 
 ```bash
-composer require edgar/backup_database
+composer require edgar_melkonyan/backup_database
+```
+- Add the service provider to your config/app.php file
+
+```bash
+ EdgarMelkonyan\BackupDatabase\BackupDatabaseServiceProvider::class
+```
+-  Go to app/Console/Kernel.php and do the following
+#### 1 Use namespace
+```bash
+use EdgarMelkonyan\BackupDatabase\BackupDatabase;
+```
+#### 2 Write class inside commands array
+```bash
+protected $commands = [
+        BackupDatabase::class
+    ];
+```
+### 3 Provide how ofter you want this command to run ex`
+```bash
+protected function schedule(Schedule $schedule)
+    {
+        $schedule->command('db:backup')
+            ->daily();
+    }
 ```
 
 ## Testing
 
 ```bash
-php artisan db:backup
-```
+ php artisan db:backup
+ ```
+
+
 
 ## License
 

@@ -1,5 +1,5 @@
 {
-    "name": "edgar/backup_database",
+    "name": "edgar_melkonyan/backup_database",
     "description": "This package backups db",
     "authors": [
         {

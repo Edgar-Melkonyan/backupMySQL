@@ -1,6 +1,6 @@
 <?php
 
-namespace Edgar\BackupDatabase;
+namespace EdgarMelkonyan\BackupDatabase;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Edgar\BackupDatabase;
+namespace EdgarMelkonyan\BackupDatabase;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,7 +13,7 @@ class BackupDatabaseServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('Edgar\BackupDatabase\BackupDatabase');
+        $this->app->make('EdgarMelkonyan\BackupDatabase\BackupDatabase');
     }
 
     /**
