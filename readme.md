@@ -4,14 +4,6 @@ BackupDatabase is package which made to backup data from MySQL and save inside s
 
 ## Installation
 
-```bash
-composer require edgar_melkonyan/backup_database
-```
-- Add the service provider to your config/app.php file
-
-```bash
- EdgarMelkonyan\BackupDatabase\BackupDatabaseServiceProvider::class
-```
 -  Go to app/Console/Kernel.php and do the following
 #### 1 Use namespace
 ```bash

@@ -8,5 +8,20 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EdgarMelkonyan\\BackupDatabase\\BackupDatabaseServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "EdgarMelkonyan\\BackupDatabase\\": "src/"
+        }
+    },
+    "license": [
+        "MIT"
+    ]
 }
